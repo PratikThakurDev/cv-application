@@ -1,24 +1,33 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import PersonalDetails from './components/personalDetails'
-import Education from './components/education'
-import './styles/index.css'
+import { StrictMode,useState } from 'react';
+import { createRoot } from 'react-dom/client';
+import PersonalDetails from './components/personalDetails';
+import Education from './components/education';
+import WorkExperience from './components/workExperience';
+import './styles/index.css';
 
-createRoot(document.getElementById('root')).render(
+function App() {
+  const [activeSection, setActiveSection] = useState("personal");
+  return(
   <StrictMode>
+    
     <div className='gradient-wrapper'>
             
             <main className="form-content">
                 <nav>
-                    <div className="personalDetails">Personal Details </div>
-                    <div>——</div>
-                    <div className="educationSection">Education </div>
-                    <div>——</div>
-                    <div className="workExperience">Work Experience</div>
+                    <div className={`nav-item ${activeSection === 'personal' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('personal')}>Personal Details </div>
+                    <div className='dash'>——</div>
+                    <div className={`nav-item ${activeSection === 'education' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('education')}>Education</div>
+                    <div className='dash'>——</div>
+                    <div className={`nav-item ${activeSection === 'work' ? 'active' : ''}`}
+                        onClick={() => setActiveSection('work')}>Work Experience</div>
                 </nav>
                 <form action="">
-                    
-                  <Education/>
+                    {activeSection === "personal" && <PersonalDetails />}
+                    {activeSection === "education" && <Education />}
+                    {activeSection === "work" && <WorkExperience/>}
+                  
                   <div className="buttons">
                     <button type='submit' className='submit'>Submit</button>
                     <button className="cancel" type='button'>Cancel</button>
@@ -27,5 +36,8 @@ createRoot(document.getElementById('root')).render(
                 </form>
             </main>
     </div>
-  </StrictMode>,
-)
+  </StrictMode>);
+
+}
+
+createRoot(document.getElementById('root')).render(<App />);
