@@ -73,7 +73,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="url"] {
+input[type="url"],.startYearInput , .endYearInput , .gpaInput {
   width: 94%;
   padding: 0.65rem 0.75rem;
   font-size: 1rem;
@@ -148,3 +148,4 @@ button.cancel:hover {
 textarea:focus {
     border-color: #4f46e5;
 }
+

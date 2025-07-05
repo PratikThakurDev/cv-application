@@ -2,3 +2,15 @@
   color:  #6366f1;
   font-weight: 700;
 }
+
+.yearsAndGpa {
+    display: grid;
+    width: 96%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.personalDetails , .workExperience {
+    color: #f5f5f5;
+    font-weight: 600;
+}

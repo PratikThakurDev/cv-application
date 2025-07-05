@@ -2,3 +2,13 @@
   color:  #6366f1;
   font-weight: 700;
 }
+.fullname {
+  display: flex;
+  gap: 2rem;
+  width: 97%;
+}
+
+.educationSection , .workExperience {
+    color: #f5f5f5;
+    font-weight: 600;
+}
