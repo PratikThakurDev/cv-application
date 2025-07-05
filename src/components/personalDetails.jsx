@@ -15,7 +15,6 @@ function PersonalDetails() {
                     <div className="workExperience">Work Experience</div>
                 </nav>
                 <form action="">
-                    
                     <div className="firstname">
                         <label htmlFor="firstName">First Name</label>
                         <input type="text" className ="firstName" required/>
@@ -33,14 +32,15 @@ function PersonalDetails() {
                         <label htmlFor="phone">Phone</label>
                         <input type="tel" className="phoneInput" pattern = '[0-9]{10}'required/>
                     </div>
-                    <div className="linkedIn">
-                        <label htmlFor="linkedin">LinkedIn</label>
-                        <input type="url" className="linkedInInput" />
+                    <div className="address">
+                        <label htmlFor="address">Address</label>
+                        <input type="text" className='addressInput' required/>
                     </div>
-                    <div className = "github">
-                        <label htmlFor="github">Github</label>
-                        <input type="url" className="githubInput" />
+                    <div class="about">
+                        <label for="about">Describe yourself</label>
+                        <textarea rows="5" required ></textarea>
                     </div>
+
                     <div className="buttons">
                         <button type='submit' className='submit'>Submit</button>
                         <button className="cancel" type='button'>Cancel</button>
