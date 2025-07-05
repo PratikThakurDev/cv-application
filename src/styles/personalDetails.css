@@ -1,0 +1,116 @@
+
+.gradient-wrapper {
+  padding: 4px;
+  max-width: 608px;
+  border-radius: 20px;
+  background: linear-gradient(270deg, #00ccb1, #7b61ff, #ffc414, #1ca0fb);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.form-content {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  color: #000;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+
+label {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  display: block;
+  color: #e0e0e0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+  width: 90%;
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #2b2b2b;
+  outline: none;
+  transition: border 0.3s ease;
+  color: #f5f5f5;
+}
+
+input:focus {
+  border-color:#6366f1;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: right;
+  max-width: 96%;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.submit {
+  background: #6366f1;
+  color: white;
+}
+
+button.submit:hover {
+  background: #4f46e5;
+}
+
+button.cancel {
+  background:  #444;
+  color: #eee;
+}
+
+button.cancel:hover {
+  background: #555;
+}
