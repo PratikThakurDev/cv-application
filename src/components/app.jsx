@@ -80,7 +80,6 @@ function App() {
               {activeSection === "work" && <WorkExperience formData={formData} setFormData={setFormData} />}
               <div className="buttons">
                 <button type="submit" className="submit">Submit</button>
-                <button type="button" className="cancel" onClick={() => setFormData({})}>Cancel</button>
               </div>
             </form>
           </main>
