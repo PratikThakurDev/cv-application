@@ -1,6 +1,8 @@
 import "../styles/workExperience.css";
 
-function WorkExperience({ workList, setFormData }) {
+function WorkExperience({ formData, setFormData }) {
+  const workList = formData.workExperience || [];
+
   const handleChange = (index, field, value) => {
     const updatedList = [...workList];
     updatedList[index][field] = value;

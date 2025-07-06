@@ -1,6 +1,8 @@
 import "../styles/education.css";
 
-function Education({ educationList, setFormData }) {
+function Education({ formData, setFormData }) {
+  const educationList = formData.education || [];
+
   const handleChange = (index, field, value) => {
     const updatedList = [...educationList];
     updatedList[index][field] = value;
@@ -118,3 +120,4 @@ function Education({ educationList, setFormData }) {
 }
 
 export default Education;
+
