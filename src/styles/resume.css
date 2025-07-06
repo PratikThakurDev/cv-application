@@ -1,0 +1,103 @@
+/* General Layout */
+.resumeContainer {
+  max-width: 800px;
+
+  padding: 2rem;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Name */
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #5c2d91; /* Violet */
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Info */
+.contactSection {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+.contactSection > div {
+  margin: 0.2rem 0;
+}
+
+/* Section Titles */
+.resumeContainer .about,
+.resumeContainer .Education,
+.resumeContainer .work {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5c2d91; /* Violet */
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+}
+
+/* Section Content */
+.aboutSection,
+.educationInfo,
+.workExperience {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Dual Columns (Date and Title) */
+.firstLine {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+.period {
+  font-style: italic;
+  color: #666;
+}
+
+/* Subtext */
+.resumeContainer .courseWork,
+.resumeContainer .workDesc {
+  padding-left: 0.5rem;
+  border-left: 3px solid #ddd;
+  color: #444;
+}
+
+/* Optional Spacing */
+main > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Edit Button */
+.edit-btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #5c2d91; /* Violet */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: block;
+}
+
+.edit-btn:hover {
+  background-color: #47207a; /* Darker Violet on hover */
+}

@@ -4,13 +4,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
-
-.educationSection , .personalDetails {
-    color: #f5f5f5;
-    font-weight: 600;
+.experienceBlock {
+  border: 1px solid #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: #1a1a1a;
 }
 
-.workExperience {
-    color:  #6366f1;
-    font-weight: 700;
-}
+
