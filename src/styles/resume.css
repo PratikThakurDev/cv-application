@@ -81,23 +81,23 @@ main > div:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-/* Edit Button */
-.edit-btn {
-  display: inline-block;
-  margin: 2rem auto 0;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: white;
-  background-color: #5c2d91; /* Violet */
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.resume-actions {
+  margin-top: 1rem;
   text-align: center;
-  display: block;
 }
 
-.edit-btn:hover {
-  background-color: #47207a; /* Darker Violet on hover */
+.resume-actions button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #5c2d91;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.resume-actions button:hover {
+  background-color: #47207a;
 }

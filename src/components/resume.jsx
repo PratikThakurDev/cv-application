@@ -1,17 +1,17 @@
-import "../styles/resume.css"
+import "../styles/resume.css";
 
-
-function Resume({ formData, onEdit }) {
+function Resume({ formData }) {
   if (!formData) return <div>Error: Missing data</div>;
 
   return (
     <main className="resumeContainer">
       <div className="name">{formData.firstName} {formData.lastName}</div>
       <div className="contactSection">
-        <div className="phone">📞{formData.phone}</div>
-        <div className="address">🏠{formData.address}</div>
-        <div className="mail">✉️{formData.email}</div>
+        <div className="phone">📞 {formData.phone}</div>
+        <div className="address">🏠 {formData.address}</div>
+        <div className="mail">✉️ {formData.email}</div>
       </div>
+
       <div className="about">About Me</div>
       <div className="aboutSection">{formData.about}</div>
 
@@ -39,10 +39,6 @@ function Resume({ formData, onEdit }) {
             <div className="workDesc">{job.description}</div>
           </div>
         ))}
-      </div>
-
-      <div className="buttons">
-        <button className="edit-btn" onClick={onEdit}>Edit</button>
       </div>
     </main>
   );
